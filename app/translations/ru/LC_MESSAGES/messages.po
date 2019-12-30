@@ -1,0 +1,236 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-12-30 20:38+0200\n"
+"PO-Revision-Date: 2019-12-25 20:48+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: app/__init__.py:21
+msgid "You have login to access this page"
+msgstr "Вы должны залогиниться для доступа к этой странице."
+
+#: app/translate.py:9
+msgid "Error: the translation service is not configured."
+msgstr "Ошибка: сервис перевода не сконфигурирован"
+
+#: app/translate.py:14
+msgid "Error: the translation service failed."
+msgstr "Ошибка: сервис перевода не работает"
+
+#: app/auth/forms.py:9 app/auth/forms.py:15 app/main/forms.py:10
+msgid "Username"
+msgstr "Пользователь"
+
+#: app/auth/forms.py:10 app/auth/forms.py:17 app/auth/forms.py:36
+msgid "Password"
+msgstr "Пароль"
+
+#: app/auth/forms.py:11
+msgid "Remember me"
+msgstr "Запомни меня"
+
+#: app/auth/forms.py:12 app/templates/auth/login.html:5
+msgid "Sign In"
+msgstr "Подписка"
+
+#: app/auth/forms.py:16 app/auth/forms.py:32
+msgid "Email"
+msgstr "Email"
+
+#: app/auth/forms.py:18
+msgid "Repeat password"
+msgstr "Повторите пароль"
+
+#: app/auth/forms.py:19 app/templates/auth/register.html:5
+msgid "Register"
+msgstr "Регистрация"
+
+#: app/auth/forms.py:24
+msgid "Please use a different username."
+msgstr "Пожалуйста, используйте другое имя"
+
+#: app/auth/forms.py:29
+msgid "Please use a different email address."
+msgstr "Пожалуйста, используйте другой email"
+
+#: app/auth/forms.py:33 app/auth/forms.py:38
+msgid "Request Password Reset"
+msgstr "Сброс пароля"
+
+#: app/auth/forms.py:37
+msgid "Repeat Password"
+msgstr "Повторите пароль"
+
+#: app/main/forms.py:11
+msgid "About me"
+msgstr "Обо мне"
+
+#: app/main/forms.py:12 app/main/forms.py:26
+msgid "Submit"
+msgstr "Подтвердить"
+
+#: app/main/forms.py:22
+msgid "Please use a different username"
+msgstr "Пожалуйста, используйте другое имя"
+
+#: app/main/forms.py:25
+msgid "Say something"
+msgstr "Скажи что нибудь"
+
+#: app/main/forms.py:29 app/main/routes.py:124
+msgid "Search"
+msgstr ""
+
+#: app/templates/_post.html:16
+#, python-format
+msgid "%(username)s said %(when)s"
+msgstr "%(username)s сказал %(when)s"
+
+#: app/templates/_post.html:17
+#, python-format
+msgid "said %(when)s"
+msgstr "сказал %(when)s"
+
+#: app/templates/_post.html:27
+msgid "Translate"
+msgstr "Перевести"
+
+#: app/templates/base.html:4
+msgid "- Flask App"
+msgstr "- Flask App"
+
+#: app/templates/base.html:4
+msgid "Welcame to Flask App"
+msgstr "Добро пожаловать в Flask App"
+
+#: app/templates/base.html:11
+msgid "Toggle navigation"
+msgstr "Включить предупреждение"
+
+#: app/templates/base.html:16
+msgid "Flask App"
+msgstr "Flask App"
+
+#: app/templates/base.html:20
+msgid "Home"
+msgstr "Домой"
+
+#: app/templates/base.html:21
+msgid "Explore"
+msgstr "Обзор"
+
+#: app/templates/base.html:25
+msgid "Login"
+msgstr "Вход"
+
+#: app/templates/base.html:27
+msgid "Profile"
+msgstr "Профиль"
+
+#: app/templates/base.html:28
+msgid "Logout"
+msgstr "Выход"
+
+#: app/templates/base.html:70
+msgid "Error: Coud not contact server"
+msgstr "Ошибка: сервер не доступен"
+
+#: app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr ""
+
+#: app/templates/index.html:5
+#, python-format
+msgid "Hello, %(username)s!"
+msgstr "Привет, %(username)s!"
+
+#: app/templates/index.html:16
+msgid "Newer post"
+msgstr "Новый пост"
+
+#: app/templates/index.html:20
+msgid "Older post"
+msgstr "Старый пост"
+
+#: app/templates/search.html:4
+msgid "Search Result"
+msgstr ""
+
+#: app/templates/search.html:13
+msgid "Previous results"
+msgstr ""
+
+#: app/templates/search.html:18
+msgid "Next results"
+msgstr ""
+
+#: app/templates/user.html:8
+#, python-format
+msgid "User: %(username)s"
+msgstr "Пользователь: %(username)s"
+
+#: app/templates/user.html:9
+msgid "User"
+msgstr "Пользователь"
+
+#: app/templates/user.html:14
+msgid "Edit your profile"
+msgstr "Редактировать профиль"
+
+#: app/templates/user.html:31
+msgid "Newer posts"
+msgstr "Новый пост"
+
+#: app/templates/user.html:35
+msgid "Older posts"
+msgstr "Старый пост"
+
+#: app/templates/auth/login.html:8
+msgid "Click to Register!"
+msgstr "Нажми для регистрации"
+
+#: app/templates/auth/login.html:9
+msgid "Click to Reset It"
+msgstr "Нажми для сброса"
+
+#: app/templates/auth/reset_password.html:5
+msgid "Reset Your Password"
+msgstr "Сброс пароля"
+
+#: app/templates/auth/reset_password_request.html:5
+msgid "Reset Password"
+msgstr "Сброс пароля"
+
+#: app/templates/errors/404.html:4
+msgid "File Not Found"
+msgstr "Файл не найден"
+
+#: app/templates/errors/404.html:5 app/templates/errors/500.html:6
+msgid "Back"
+msgstr "Назад"
+
+#: app/templates/errors/500.html:4
+msgid "An unexpected error has occurred"
+msgstr "Произошла ошибка"
+
+#: app/templates/errors/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "Фдминистратор предупрежден. Извините за неудобство!"
+
+#~ msgid "Edit Profile<"
+#~ msgstr "Редактировать профиль"
+
