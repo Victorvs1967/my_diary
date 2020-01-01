@@ -15,8 +15,8 @@
             </p>
             {% endif %}
             <p>
-                {{  _('%(cound)d followers', count=user.followers.count()) }}
-                {{  _('%(cound)d following', count=user.followed.count()) }}
+                {{  _('%(count)d followers', count=user.followers.count()) }}
+                {{  _('%(count)d following', count=user.followed.count()) }}
             </p>
             {% if user != current_user %}
                 {% if not current_user.unfollowing(user) %}
