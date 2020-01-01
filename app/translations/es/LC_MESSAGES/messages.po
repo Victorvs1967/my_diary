@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-12-30 20:38+0200\n"
+"POT-Creation-Date: 2020-01-02 00:50+0200\n"
 "PO-Revision-Date: 2019-12-25 16:06+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Error: the translation service is not configured."
 msgstr ""
 
-#: app/translate.py:14
+#: app/translate.py:13
 msgid "Error: the translation service failed."
 msgstr ""
 
@@ -78,7 +78,7 @@ msgstr ""
 msgid "About me"
 msgstr ""
 
-#: app/main/forms.py:12 app/main/forms.py:26
+#: app/main/forms.py:12 app/main/forms.py:26 app/main/forms.py:40
 msgid "Submit"
 msgstr ""
 
@@ -90,8 +90,20 @@ msgstr ""
 msgid "Say something"
 msgstr ""
 
-#: app/main/forms.py:29 app/main/routes.py:124
+#: app/main/forms.py:29 app/main/routes.py:122
 msgid "Search"
+msgstr ""
+
+#: app/main/forms.py:39
+msgid "Message"
+msgstr ""
+
+#: app/main/routes.py:139
+msgid "Your message has been sent."
+msgstr ""
+
+#: app/main/routes.py:141
+msgid "Send Message"
 msgstr ""
 
 #: app/templates/_post.html:16
@@ -106,46 +118,6 @@ msgstr ""
 
 #: app/templates/_post.html:27
 msgid "Translate"
-msgstr ""
-
-#: app/templates/base.html:4
-msgid "- Flask App"
-msgstr ""
-
-#: app/templates/base.html:4
-msgid "Welcame to Flask App"
-msgstr ""
-
-#: app/templates/base.html:11
-msgid "Toggle navigation"
-msgstr ""
-
-#: app/templates/base.html:16
-msgid "Flask App"
-msgstr ""
-
-#: app/templates/base.html:20
-msgid "Home"
-msgstr ""
-
-#: app/templates/base.html:21
-msgid "Explore"
-msgstr ""
-
-#: app/templates/base.html:25
-msgid "Login"
-msgstr ""
-
-#: app/templates/base.html:27
-msgid "Profile"
-msgstr ""
-
-#: app/templates/base.html:28
-msgid "Logout"
-msgstr ""
-
-#: app/templates/base.html:70
-msgid "Error: Coud not contact server"
 msgstr ""
 
 #: app/templates/edit_profile.html:5
@@ -177,6 +149,11 @@ msgstr ""
 msgid "Next results"
 msgstr ""
 
+#: app/templates/send_message.html:5
+#, python-format
+msgid "Send Messages to %(recipient)s"
+msgstr ""
+
 #: app/templates/user.html:8
 #, python-format
 msgid "User: %(username)s"
@@ -190,12 +167,42 @@ msgstr ""
 msgid "Edit your profile"
 msgstr ""
 
-#: app/templates/user.html:31
+#: app/templates/user.html:16
+msgid "follow"
+msgstr ""
+
+#: app/templates/user.html:21
+msgid "Send private message"
+msgstr ""
+
+#: app/templates/user.html:34
 msgid "Newer posts"
 msgstr ""
 
-#: app/templates/user.html:35
+#: app/templates/user.html:38
 msgid "Older posts"
+msgstr ""
+
+#: app/templates/user_popup.html:13
+msgid "Last seen on"
+msgstr ""
+
+#: app/templates/user_popup.html:18
+#, python-format
+msgid "%(count)d followers"
+msgstr ""
+
+#: app/templates/user_popup.html:19
+#, python-format
+msgid "%(count)d following"
+msgstr ""
+
+#: app/templates/user_popup.html:23
+msgid "Follow"
+msgstr ""
+
+#: app/templates/user_popup.html:25
+msgid "Unfollow"
 msgstr ""
 
 #: app/templates/auth/login.html:8
@@ -240,5 +247,35 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Edit Profile<"
+#~ msgstr ""
+
+#~ msgid "- Flask App"
+#~ msgstr ""
+
+#~ msgid "Welcame to Flask App"
+#~ msgstr ""
+
+#~ msgid "Toggle navigation"
+#~ msgstr ""
+
+#~ msgid "Flask App"
+#~ msgstr ""
+
+#~ msgid "Home"
+#~ msgstr ""
+
+#~ msgid "Explore"
+#~ msgstr ""
+
+#~ msgid "Login"
+#~ msgstr ""
+
+#~ msgid "Profile"
+#~ msgstr ""
+
+#~ msgid "Logout"
+#~ msgstr ""
+
+#~ msgid "Error: Coud not contact server"
 #~ msgstr ""
 
