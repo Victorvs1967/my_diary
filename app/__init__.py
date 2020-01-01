@@ -74,7 +74,7 @@ def create_app(config_class=Config):
         app.logger.addHandler(file_handler)
 
         app.logger.setLevel(logging.INFO)
-    app.logger.info('Application startup')
+        app.logger.info('Application startup')
 
     return app
 
