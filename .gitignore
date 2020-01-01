@@ -1,7 +1,7 @@
-__pycache__/
+__pycache__
+venv
+logs
+.vscode
+app/simple_templates
 .env
-venv/
-logs/
-.vscode/
-app/simple_templates/
 *.db
