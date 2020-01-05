@@ -14,7 +14,6 @@ class SearchableMixin(object):
     @classmethod
     def search(cls, expression, page, per_page):
         ids, total = query_index(cls.__tablename__, expression, page, per_page)
-        print(total)
         if total == 0:
             return cls.query.filter_by(id=0), 0
         when = []
