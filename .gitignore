@@ -3,5 +3,5 @@ venv
 logs
 .vscode
 app/simple_templates
-.env
+.env*
 *.db
