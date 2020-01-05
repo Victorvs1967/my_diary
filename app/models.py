@@ -23,7 +23,6 @@ class SearchableMixin(object):
 
     @classmethod
     def before_commit(cls, session):
-        Post.reindex()
         session._changes = {
             'add': list(session.new),
             'update': list(session.dirty),
