@@ -106,3 +106,5 @@ widgetsnbextension==3.5.1
 wrapt==1.11.2
 WTForms==2.2.1
 zipp==0.6.0
+
+psycopg2-binary==2.8.4
