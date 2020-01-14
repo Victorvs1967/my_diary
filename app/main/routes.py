@@ -8,7 +8,7 @@ from app import db
 from app.models import User, Post, Message, Notification
 from app.translate import translate
 from app.main import bp, routes
-from app.main.forms import EditProfileForm, PostForm, SearchForm, MessageForm
+from app.main.forms import EditProfileForm, PostForm, SearchForm, MessageForm, EditUserForm
 
 
 @bp.before_app_request
@@ -160,3 +160,27 @@ def notifications():
     since = request.args.get('since', 0.0, type=float)
     notifications = current_user.notifications.filter(Notification.timestamp > since).order_by(Notification.timestamp.asc())
     return jsonify([{'name': n.name, 'data': n.get_data(), 'timestamp': n.timestamp} for n in notifications])
+
+@bp.route('/admin')
+@login_required
+def admin():
+    users = User.query.order_by(User.username, True)
+    return render_template('admin.html', title='Admin', users=users)
+
+@bp.route('/edituser/<editinguser>', methods=['GET', 'POST'])
+@login_required
+def edituser(editinguser):
+    user = User.query.filter_by(username=editinguser).first_or_404()
+    form = EditUserForm(user.username, user.email)
+    if form.validate_on_submit():
+        user.username = form.username.data
+        user.email = form.email.data
+        user.set_password(form.password.data)
+        db.session.commit()
+        flash(f'Congratulations, users data of {user.username.upper()} edited!')
+        return redirect(url_for('main.admin'))
+    elif request.method == 'GET':
+        form.username.data = user.username
+        form.email.data = user.email
+    return render_template('edit_user.html', title='Edit user', form=form, user=user)
+

@@ -38,3 +38,27 @@ class SearchForm(FlaskForm):
 class MessageForm(FlaskForm):
     message = TextAreaField(_l('Message'), validators=[DataRequired(), Length(min=0, max=140)])
     submit = SubmitField( _l('Submit') )
+
+class EditUserForm(FlaskForm):
+    username = StringField(_l('Username'), validators=[DataRequired()])
+    email = StringField(_l('Email'), validators=[DataRequired(), Email()])
+    password = PasswordField(_l('Password'), validators=[DataRequired()])
+    password2 = PasswordField(_l('Repeat password'), validators=[DataRequired(), EqualTo('password')])
+    submit = SubmitField(_l('Submit'))
+
+    def __init__(self, original_username, original_email, *args, **kwargs):
+        super(EditUserForm, self).__init__(*args, **kwargs)
+        self.original_username = original_username
+        self.original_email = original_email
+
+    def validate_username(self, username):
+        if username.data != self.original_username:
+            user = User.query.filter_by(username=self.username.data).first()
+            if user is not None:
+                raise ValidationError(_('Please use a different username'))
+
+    def validate_email(self, email):
+        if email.data != self.original_email:
+            user = User.query.filter_by(email=email.data).first()
+            if user is not None:
+                raise ValidationError(_('Please use a different email address.'))
