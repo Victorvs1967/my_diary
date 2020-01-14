@@ -183,4 +183,3 @@ def edituser(editinguser):
         form.username.data = user.username
         form.email.data = user.email
     return render_template('edit_user.html', title='Edit user', form=form, user=user)
-
