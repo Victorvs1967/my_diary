@@ -19,7 +19,7 @@ def before_request():
         g.search_form = SearchForm()
     g.locale = str(get_locale())
 
-@bp.route('/', methods=['GET', 'POST'])    
+@bp.route('/')    
 @bp.route('/index', methods=['GET', 'POST'])
 @login_required
 def index():
@@ -183,3 +183,5 @@ def edituser(editinguser):
         form.username.data = user.username
         form.email.data = user.email
     return render_template('edit_user.html', title='Edit user', form=form, user=user)
+
+

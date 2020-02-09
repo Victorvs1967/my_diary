@@ -40,10 +40,8 @@ def create_app(config_class=Config):
 
     from app.errors import bp as errors_bp
     app.register_blueprint(errors_bp)
-
     from app.auth import bp as auth_bp
     app.register_blueprint(auth_bp, url_prefix='/auth')
-
     from app.main import bp as main_bp
     app.register_blueprint(main_bp)
 
@@ -68,6 +66,7 @@ def create_app(config_class=Config):
 
         if not os.path.exists('logs'):
             os.mkdir('logs')
+
         file_handler = RotatingFileHandler('logs/server.log', maxBytes=10240, backupCount=10)
         file_handler.setFormatter(logging.Formatter('%(asctime)s %(levelname)s: %(message)s [in %(pathname)s: %(lineno)d]'))
         file_handler.setLevel(logging.INFO)
