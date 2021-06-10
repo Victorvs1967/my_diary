@@ -18,7 +18,7 @@ cryptography==2.8
 cycler==0.10.0
 decorator==4.4.1
 defusedxml==0.6.0
-Django==2.2.7
+Django==2.2.24
 django-templated-mail==1.1.1
 djangorestframework==3.10.3
 djoser==2.0.3
